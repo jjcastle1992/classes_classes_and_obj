@@ -34,10 +34,13 @@ class Student {
 };
 
 int main() {
-    int n; // number of students
+    int n = 0; // number of students
     cin >> n;
 
     //include data validation so 0 < n <= 100
+    if (n <= 0 || n > 100) {
+        n = 0;
+    }
     Student *s = new Student[n]; // an array of n students
 
     for(int i = 0; i < n; i++){
