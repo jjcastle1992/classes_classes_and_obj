@@ -22,8 +22,15 @@ class Student {
                 }
             }
         }
-
         //create calculateTotalScores method that returns the sum of student scores
+        int calculateTotalScore () {
+            int totalScore = 0;
+            vector <int>::iterator itr;
+            for (itr = scores.begin(); itr != scores.end(); itr++) {
+                totalScore =+ scores[*itr];
+            }
+            return totalScore;
+        }
 };
 
 int main() {
@@ -37,7 +44,7 @@ int main() {
         s[i].input();
     }
 
-    // calculate kristen's score
+//    // calculate kristen's score
     int kristen_score = s[0].calculateTotalScore();
 
     // determine how many students scored higher than kristen
