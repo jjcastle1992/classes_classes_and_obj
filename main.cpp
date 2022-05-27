@@ -7,10 +7,23 @@
 using namespace std;
 
 // Write your Student class here
+class Student {
+    private:
+        //Create instance variable to hold 5 scores
+        vector <int> scores;
+    public:
+        //create a void method that reads 5 integers from cin and saves to our scores vector
+
+            //data validation where the passed exam score must be between 0 and 50.
+
+        //create calculateTotalScores method that returns the sum of student scores
+};
 
 int main() {
     int n; // number of students
     cin >> n;
+
+    //include data validation so 0 < n <= 100
     Student *s = new Student[n]; // an array of n students
 
     for(int i = 0; i < n; i++){
