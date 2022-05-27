@@ -27,7 +27,7 @@ class Student {
             int totalScore = 0;
             vector <int>::iterator itr;
             for (itr = scores.begin(); itr != scores.end(); itr++) {
-                totalScore =+ scores[*itr];
+                totalScore += *itr;
             }
             return totalScore;
         }
