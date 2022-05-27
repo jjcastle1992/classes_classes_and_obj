@@ -13,8 +13,15 @@ class Student {
         vector <int> scores;
     public:
         //create a void method that reads 5 integers from cin and saves to our scores vector
-
-            //data validation where the passed exam score must be between 0 and 50.
+        void input () {
+            int grade = 0;
+            for (int i = 0; i < 5; i++) {
+                cin >> grade;
+                if (grade >= 0 && grade <= 50) {
+                    scores.push_back(grade);
+                }
+            }
+        }
 
         //create calculateTotalScores method that returns the sum of student scores
 };
